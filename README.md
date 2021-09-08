@@ -39,8 +39,7 @@ python test.py --data data/PeMS-Bay --model weights/STNN-combined.state.pt
 
 Since we use sub-spacetime to train a relative small model, 70% training data is more than enough. Experiment results showing that use 0.2*70% data to train provide the excellent performance.
 
-Check `figs/data ratio.png`
-<img src="figs/data ratio.png" alt="data ratio" style="zoom: 10%;" />
+Check `figs/data ratio.png`.
 
 We transform raw input data to a collections of sub-spacetime and save to disk before training/testing if data not exists. For METR-LA, transformed 0.2\*70% training set is about 4 GB on disk, 1\*20% validation set is about 6GB, 1\*10% test set is about 3GB. For PeMS-Bay, it's about twice larger than METR-LA.
 
